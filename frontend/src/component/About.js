@@ -1,90 +1,38 @@
-import React from "react";
-import BreadCrumb from "./BreadAbout";
+import React from 'react';
 
 const About = () => {
   return (
-    <div className="min-vh-100">
-      <BreadCrumb />
-      <h1 className="text-center">About Us</h1>
-      <div className="p-5">
-        <img src="/assets/nett.webp" className="card-img-top" alt="" />
-      </div>
-      <div class="p-5 accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-FOOD HUB            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>Food Court </strong>
-              <p>Best Food Available</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Address
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-           We Provide Best foods{" "}
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Location & Contact
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores labore maiores doloremque architecto, rem, tempora
-                eum possimus ad, veniam placeat nemo cumque culpa corporis
-                adipisci illo alias voluptate nobis soluta?
-              </p>
-              <strong>8804339456</strong>
-            </div>
-          </div>
-        </div>{" "}
+    <div className="container mt-5">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our website! We are a team of passionate individuals committed to providing high-quality products and
+        exceptional service to our customers. Our mission is to make a positive impact on people's lives through our innovative
+        solutions.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat tristique turpis non euismod.
+        Vestibulum auctor euismod quam, eu condimentum odio consequat quis. Vestibulum ac nisi quam. Nulla facilisi. Sed vel
+        nisi id arcu euismod ullamcorper non eget lorem.
+      </p>
+      <div className="social-links mt-4">
+        <h3>Follow Us on Social Media</h3>
+        <ul className="list-inline">
+          <li className="list-inline-item">
+            <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <i className="fab fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.twitter.com/your-twitter-page" target="_blank" rel="noopener noreferrer" className="btn btn-info">
+              <i className="fab fa-twitter"></i> Twitter
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.instagram.com/your-instagram-page" target="_blank" rel="noopener noreferrer" className="btn btn-danger">
+              <i className="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

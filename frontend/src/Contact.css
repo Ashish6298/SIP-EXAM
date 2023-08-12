@@ -1,0 +1,16 @@
+/* Custom styles for responsive effects on cards */
+/* Contact.css */
+.dark-bg {
+    background-color: #ff9100; /* Replace with your desired dark color code */
+    color: #fff; /* Optionally, set the text color to white or any other contrasting color */
+  }
+  
+  .card {
+      transition: transform 0.2s ease; /* Add a smooth transition on transform property */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Increase the card size on hover */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect on hover */
+    }
+    

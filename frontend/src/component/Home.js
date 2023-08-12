@@ -1,58 +1,64 @@
-import React from "react";
-import BreadCrumb from "./BreadHome";
+import React from 'react';
+import { Carousel, Card } from 'react-bootstrap';
+import './Home.css';
 
 const Home = () => {
   return (
-    <div className="min-vh-100">
-      <BreadCrumb />
-      <div className="text-center">
-        <svg
-          xmlns=""
-          width="75"
-          height="75"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="currentColor"
-            d="#"
+    <div className="container mt-5 dark-bg">
+    <div className="container mt-5">
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block mx-auto carousel-img"
+            src="https://img.freepik.com/free-psd/burger-special-offer-banner-template_23-2148812233.jpg"
+            alt="First slide"
           />
-        </svg>{" "}
-        <h1>Food Court</h1>
-      </div>
-      <h6 className="text-center">Foods WE Offer</h6>
-      <div className="p-5">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assests/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" width="500px"/>
-            </div>
-            <div class="carousel-item">
-              <img src="assests/Unhealthy-Food-Chart.jpg"  width="500px" />
-            </div>
-            <div class="carousel-item">
-              <img src="assests/unhealthy-food-e1533216858696-720x380.jpg.webp"  width="500px" />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block mx-auto carousel-img"
+            src="https://img.freepik.com/free-vector/american-food-banner-template_23-2148929022.jpg"
+            alt="Second slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+
+      <div className="row mt-5">
+        <div className="col-md-4">
+          <Card>
+            <Card.Img variant="top" src="https://cdn.dribbble.com/users/5286378/screenshots/20498876/untitled-1_4x.jpg" />
+            <Card.Body>
+              <Card.Title>BURGER</Card.Title>
+              <Card.Text>
+               Life's too short to miss out on a great burger
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <Card.Img variant="top" src="https://w0.peakpx.com/wallpaper/163/758/HD-wallpaper-delicious-lunch-tomato-food-turtle-hamburger-sandwich-square-cheese-meat-chair.jpg" />
+            <Card.Body>
+              <Card.Title>SANDWICH</Card.Title>
+              <Card.Text>
+              Sandwiches: The perfect handheld happiness, a bite-sized escape from the mundane
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <Card.Img variant="top" src="https://w0.peakpx.com/wallpaper/49/640/HD-wallpaper-closeup-of-coca-cola-tin-can.jpg" />
+            <Card.Body>
+              <Card.Title>COKE</Card.Title>
+              <Card.Text>
+              Pop the top, sip the sparkle, and let the effervescence dance on your tongue
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </div>
       </div>
+    </div>
     </div>
   );
 };
